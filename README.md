@@ -4,7 +4,7 @@
 
 通过 Playwright 驱动 Chromium 浏览器在无头模式下运行，利用现代 Web 技术（HTML5/CSS3/Canvas）渲染视频转场效果。
 
-目前实现的转场效果还不多，后续会更新
+目前实现的转场效果还不多，后续会更新，有兴趣的也可以研究
 ## ✨ 核心特点
 
 - 🌐 **浏览器引擎渲染** - Chromium 引擎驱动，充分利用 GPU 硬件加速
@@ -12,6 +12,20 @@
 - 🐍 **纯 Python 控制** - 无需 Node.js，通过 Playwright 自动化框架控制浏览器
 - ⚡ **高性能渲染** - 批处理优化，内存占用低，渲染速度快
 - 🔧 **稳定可靠** - Microsoft Playwright + Google Chromium，跨平台支持
+
+✅ Playwright + Chromium 可以使用的高级技术 （待探索）
+WebGL / WebGL 2.0 - GPU 加速的 3D 渲染
+Three.js / Babylon.js - 完整的 3D 引擎库
+GLSL Shader - 自定义着色器特效
+WebAssembly - 高性能计算
+物理引擎 - 真实物理模拟
+🎬 可以实现的效果（代验证）
+⭐ 粒子爆炸/飞散
+⭐ 流体/液体模拟
+⭐ 光线追踪/光影效果
+⭐ 3D 场景转换
+⭐ 电影级后处理（景深、辉光、色差）
+⭐ 着色器特效（故障艺术、液体金属）
 
 
 https://github.com/user-attachments/assets/903b204f-7385-4bb1-a87e-095365724cdd
