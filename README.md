@@ -13,20 +13,22 @@
 - ⚡ **高性能渲染** - 批处理优化，内存占用低，渲染速度快
 - 🔧 **稳定可靠** - Microsoft Playwright + Google Chromium，跨平台支持
 
-✅ Playwright + Chromium 可以使用的高级技术 （待探索）
-WebGL / WebGL 2.0 - GPU 加速的 3D 渲染
-Three.js / Babylon.js - 完整的 3D 引擎库
-GLSL Shader - 自定义着色器特效
-WebAssembly - 高性能计算
-物理引擎 - 真实物理模拟
-🎬 可以实现的效果（代验证）
-⭐ 粒子爆炸/飞散
-⭐ 流体/液体模拟
-⭐ 光线追踪/光影效果
-⭐ 3D 场景转换
-⭐ 电影级后处理（景深、辉光、色差）
-⭐ 着色器特效（故障艺术、液体金属）
+### ✅ **Playwright + Chromium 可以使用的高级技术** （待研究）
 
+1. **WebGL / WebGL 2.0** - GPU 加速的 3D 渲染
+2. **Three.js / Babylon.js** - 完整的 3D 引擎库
+3. **GLSL Shader** - 自定义着色器特效
+4. **WebAssembly** - 高性能计算
+5. **物理引擎** - 真实物理模拟
+
+### 🎬 **可以实现的效果** （待验证）
+
+- ⭐ 粒子爆炸/飞散
+- ⭐ 流体/液体模拟
+- ⭐ 光线追踪/光影效果
+- ⭐ 3D 场景转换
+- ⭐ 电影级后处理（景深、辉光、色差）
+- ⭐ 着色器特效（故障艺术、液体金属）
 
 https://github.com/user-attachments/assets/903b204f-7385-4bb1-a87e-095365724cdd
 
