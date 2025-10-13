@@ -1,0 +1,779 @@
+{
+  "id": "eff0ec8a-bc9f-4314-a682-b220fe670f36",
+  "revision": 0,
+  "last_node_id": 8,
+  "last_link_id": 8,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "VideoCubeRotationAdvancedNode",
+      "pos": [
+        1103.5899658203125,
+        -2213.572021484375
+      ],
+      "size": [
+        292.8101501464844,
+        350
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "video_front",
+          "name": "video_front",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "label": "video_back",
+          "name": "video_back",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "label": "video_left",
+          "name": "video_left",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 6
+        },
+        {
+          "label": "video_right",
+          "name": "video_right",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 5
+        },
+        {
+          "label": "video_top",
+          "name": "video_top",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 8
+        },
+        {
+          "label": "video_bottom",
+          "name": "video_bottom",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "label": "video",
+          "name": "video",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VideoCubeRotationAdvancedNode"
+      },
+      "widgets_values": [
+        "diagonal",
+        1,
+        4,
+        24,
+        "#171717",
+        1024,
+        1024,
+        1,
+        1000
+      ]
+    },
+    {
+      "id": 2,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1518.6258544921875,
+        -2212.89990234375
+      ],
+      "size": [
+        758.0027465820312,
+        1086.002685546875
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "图像",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "label": "音频",
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "label": "批次管理",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "文件名",
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "f7369389620ff244ddd6086cf0fa792a569086f2",
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00800.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 24,
+            "workflow": "AnimateDiff_00800.png",
+            "fullpath": "D:\\Airuanjian\\Comfyui-cu11.8\\ComfyUI_windows_portable\\ComfyUI\\output\\AnimateDiff_00800.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        -850,
+        -2220
+      ],
+      "size": [
+        210,
+        577.828125
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "批次管理",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3
+          ]
+        },
+        {
+          "label": "帧计数",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "label": "视频信息",
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "f7369389620ff244ddd6086cf0fa792a569086f2",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "01 (1).mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "01 (1).mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        -520,
+        -2220
+      ],
+      "size": [
+        210,
+        662.4375
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "批次管理",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        },
+        {
+          "label": "帧计数",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "label": "视频信息",
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "f7369389620ff244ddd6086cf0fa792a569086f2",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "拍我AI_V5_图文模式_540P_大风吹拂，飞扬的头发，煽动翅膀的飞鸟，动态中展现短发女人.mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 59,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "拍我AI_V5_图文模式_540P_大风吹拂，飞扬的头发，煽动翅膀的飞鸟，动态中展现短发女人.mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 59,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        -210,
+        -2190
+      ],
+      "size": [
+        210,
+        577.828125
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "批次管理",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5
+          ]
+        },
+        {
+          "label": "帧计数",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "label": "视频信息",
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "f7369389620ff244ddd6086cf0fa792a569086f2",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "07 (1).mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 59,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "07 (1).mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 59,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        100,
+        -2200
+      ],
+      "size": [
+        210,
+        579.3125
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "批次管理",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6
+          ]
+        },
+        {
+          "label": "帧计数",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "label": "视频信息",
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "f7369389620ff244ddd6086cf0fa792a569086f2",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "cb37ac430ed8141d6d4ef2ed7c036f79.gif",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 59,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "cb37ac430ed8141d6d4ef2ed7c036f79.gif",
+            "type": "input",
+            "format": "image/gif",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 59,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        411.8182067871094,
+        -2215.621337890625
+      ],
+      "size": [
+        210,
+        592.671875
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "批次管理",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8
+          ]
+        },
+        {
+          "label": "帧计数",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "label": "视频信息",
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "f7369389620ff244ddd6086cf0fa792a569086f2",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "WanVideo2_2_I2V_00001_p83_zbjdr_1757726711.mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 59,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "WanVideo2_2_I2V_00001_p83_zbjdr_1757726711.mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 59,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 8,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        764.7003173828125,
+        -2199.80517578125
+      ],
+      "size": [
+        210,
+        592.671875
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "批次管理",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7
+          ]
+        },
+        {
+          "label": "帧计数",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "label": "视频信息",
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "f7369389620ff244ddd6086cf0fa792a569086f2",
+        "Node name for S&R": "VHS_LoadVideo"
+      },
+      "widgets_values": {
+        "video": "WanVideo2_2_I2V_00001_p81_zspcp_1757726176.mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 59,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "WanVideo2_2_I2V_00001_p81_zspcp_1757726176.mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 59,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      4,
+      0,
+      1,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      3,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      5,
+      5,
+      0,
+      1,
+      3,
+      "IMAGE"
+    ],
+    [
+      6,
+      6,
+      0,
+      1,
+      2,
+      "IMAGE"
+    ],
+    [
+      7,
+      8,
+      0,
+      1,
+      5,
+      "IMAGE"
+    ],
+    [
+      8,
+      7,
+      0,
+      1,
+      4,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.45000000000000334,
+      "offset": [
+        1592.8454413293414,
+        2562.5216247109233
+      ]
+    },
+    "frontendVersion": "1.26.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
+  },
+  "version": 0.4
+}
