@@ -36,8 +36,8 @@ class CubeRotationNode(ComfyNodeABC):
             },
             "optional": {
                 "background_color": (IO.STRING, {"default": "#1a1a2e"}),
-                "width": (IO.INT, {"default": 1920, "min": 640, "max": 3840}),
-                "height": (IO.INT, {"default": 1080, "min": 360, "max": 2160}),
+                "width": (IO.INT, {"default": 640, "min": 640, "max": 3840}),
+                "height": (IO.INT, {"default": 640, "min": 360, "max": 2160}),
                 "cube_size": (IO.FLOAT, {"default": 0.6, "min": 0.3, "max": 1.0}),
                 "perspective": (IO.FLOAT, {"default": 1000.0, "min": 500.0, "max": 3000.0}),
             }
@@ -408,3 +408,4 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "CubeRotationNode": "Cube Rotation",
 }
+
