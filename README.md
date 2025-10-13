@@ -13,12 +13,7 @@
 - 🔧 **稳定可靠** - Microsoft Playwright + Google Chromium，跨平台支持
 
 
-
-
-
-https://github.com/user-attachments/assets/52a3c096-7fb9-4102-85e5-da6f2a0171ef
-
-
+https://github.com/user-attachments/assets/903b204f-7385-4bb1-a87e-095365724cdd
 
 
 ## 📦 安装
