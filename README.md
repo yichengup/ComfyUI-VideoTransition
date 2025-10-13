@@ -144,7 +144,7 @@ Playwright 支持驱动三大浏览器引擎：
 
 > 💡 未来可能扩展：选择不同浏览器引擎以获得特定渲染效果或兼容性
 
-### ✅ **Playwright + Chromium 可以使用的高级技术** （待研究）
+### ✅ **Playwright + Chromium 可以使用的高级技术** （AI说可以，高手可以研究）
 
 1. **WebGL / WebGL 2.0** - GPU 加速的 3D 渲染
 2. **Three.js / Babylon.js** - 完整的 3D 引擎库
