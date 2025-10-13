@@ -2,7 +2,7 @@
 
 基于 Chromium 无头浏览器和python实现的视频转场效果插件
 
-通过 Playwright 驱动 Chromium 浏览器在无头模式下运行，利用现代 Web 技术（HTML5/CSS3/Canvas）渲染专业级视频转场效果。
+通过 Playwright 驱动 Chromium 浏览器在无头模式下运行，利用现代 Web 技术（HTML5/CSS3/Canvas）渲染视频转场效果。
 
 目前实现的转场效果还不多，后续会更新
 ## ✨ 核心特点
