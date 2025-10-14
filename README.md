@@ -38,8 +38,6 @@ playwright install chromium
 
 playwright install chromium
 
-# 安装系统依赖
-playwright install-deps chromium
 ```
 
 
